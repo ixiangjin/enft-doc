@@ -1,5 +1,5 @@
 ---
-title: API Reference
+title: enft协议使用文档
 
 language_tabs: # must be one of https://github.com/rouge-ruby/rouge/wiki/List-of-supported-languages-and-lexers
   - shell
@@ -8,8 +8,7 @@ language_tabs: # must be one of https://github.com/rouge-ruby/rouge/wiki/List-of
   - javascript
 
 toc_footers:
-  - <a href='#'>Sign Up for a Developer Key</a>
-  - <a href='https://github.com/slatedocs/slate'>Documentation Powered by Slate</a>
+  - <a href='#'>注册获取绑定版本SDK及对应开发者秘钥</a>
 
 includes:
   - errors
@@ -19,21 +18,44 @@ search: true
 code_clipboard: true
 
 meta:
-  - name: description
-    content: Documentation for the Kittn API
+  - name: 描述
+    content: ENFT协议说明文档
 ---
 
-# Introduction
+# 简介
 
-Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.
+欢迎您选择ENFTAPI服务！
 
-We have language bindings in Shell, Ruby, Python, and JavaScript! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
+此文档是ENFT的唯一官方文档，ENFTAPI提供的功能和服务会在此文档持续更新。
 
-This example API documentation page was created with [Slate](https://github.com/slatedocs/slate). Feel free to edit it and use it as a base for your own API's documentation.
+ENFT提供了丰富的API接口供开发者使用，接入简单，使用方便。第三方应用开发者可以借助该服务，快速构建稳定高效的数字货币行情系统，为实时业务和产品运营提供技术支持。
 
-# Authentication
 
-> To authorize, use this code:
+如何阅读本文档
+
+文档左侧是目录 ，中间是正文，右侧是请求参数和响应结果的示例。
+
+以下是ENFTAPI文档各章节主要内容
+
+
+第一部分是概要介绍：
+
+快速入门： 该章节对ENFTAPI做了简单且全方位的介绍，适合第一次使用ENFTAPI的用户。
+
+联系我们： 该章节介绍遇到问题，如何联系我们。
+
+
+第二部分是每个接口类的详细介绍，每个接口类一个章节，每个章节分为如下内容：
+
+简介： 对该接口类进行简单介绍，包括一些注意事项和说明。
+
+具体接口： 介绍每个接口的用途、限频、请求、参数、返回等详细信息。
+
+常见问题： 介绍该接口类下常见问题和解答。
+
+# 身份验证
+
+> 可以使用以下代码进行身份验证:
 
 ```ruby
 require 'kittn'
