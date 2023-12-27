@@ -11,7 +11,7 @@ toc_footers:
   - <a href='#'>注册获取绑定版本SDK及对应开发者秘钥</a>
 
 includes:
-  - 错误
+  - errors
 
 search: true
 
@@ -53,10 +53,6 @@ ENFT提供了丰富的API接口供开发者使用，接入简单，使用方便�
 
 常见问题： 介绍该接口类下常见问题和解答。
 
-# 快速入门
-# 接入说明
-# 获取你的API KEY
-
 # 身份验证
 
 > 可以使用以下代码进行身份验证:
@@ -97,20 +93,34 @@ Kittn expects for the API key to be included in all API requests to the server i
 You must replace <code>meowmeowmeow</code> with your personal API key.
 </aside>
 
-# 功能特性
+# Kittens
 
-## 功能结构
+## Get All Kittens
 
 ```ruby
+require 'kittn'
+
+api = Kittn::APIClient.authorize!('meowmeowmeow')
+api.kittens.get
 ```
 
 ```python
+import kittn
+
+api = kittn.authorize('meowmeowmeow')
+api.kittens.get()
 ```
 
 ```shell
+curl "http://example.com/api/kittens" \
+  -H "Authorization: meowmeowmeow"
 ```
 
 ```javascript
+const kittn = require('kittn');
+
+let api = kittn.authorize('meowmeowmeow');
+let kittens = api.kittens.get();
 ```
 
 > The above command returns JSON structured like this:
