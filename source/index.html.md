@@ -11,7 +11,7 @@ toc_footers:
   - <a href='#'>注册获取绑定版本SDK及对应开发者秘钥</a>
 
 includes:
-  - errors
+  - 错误
 
 search: true
 
